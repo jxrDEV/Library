@@ -49,21 +49,124 @@ body {
   width: 100%;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
+  background-color: #f0eef1;
 }
 
 .header {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #ac9fbb;
+  background-color: #fffbfb;
   height: 15vh;
 }
 
 .nav-bar {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.nav-bar h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav-bar button {
+  width: 8%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.nav-bar button:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.add-book {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.add-book button {
+  border: none;
+  cursor: pointer;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.add-book button:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.modal {
+  width: 19%;
+  height: 52%;
+  background-color: #f0eef1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.1rem;
+  padding: .5rem;
+}
+
+form h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+form input {
+  width: 90%;
+  border: none;
+  padding: .6rem;
+  border-radius: 8px;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: .5rem;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: white;
+}
+
+form button {
+  width: 90%;
+  height: 12%;
+  border-radius: 8px;
+  border: none;
+  background-color: #bfdbf7;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+}
+
+form button:hover {
+  background-color: #aec9e1;
 }

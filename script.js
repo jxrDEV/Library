@@ -1,3 +1,13 @@
+const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.open-button');
+const closeModal = document.querySelector('.submit-button');
+
+openModal.addEventListener('click', () => {
+  modal.showModal();
+})
+
+
+
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
